@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import SQLite
 
 class ViewController: UIViewController {
+    
+    private let placeService = PlaceService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        _ = placeService.getPlace()
     }
 
     override func didReceiveMemoryWarning() {

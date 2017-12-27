@@ -7,4 +7,8 @@ target 'place' do
 
   # Pods for place
 
+  ## sqlite工具
+  pod 'SQLite.swift', '~> 0.11.4'
+
+  
 end

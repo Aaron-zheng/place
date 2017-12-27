@@ -13,6 +13,10 @@
 		A0BDAE291FF3FA3E00E965B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BDAE271FF3FA3E00E965B9 /* Main.storyboard */; };
 		A0BDAE2B1FF3FA3E00E965B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0BDAE2A1FF3FA3E00E965B9 /* Assets.xcassets */; };
 		A0BDAE2E1FF3FA3E00E965B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BDAE2C1FF3FA3E00E965B9 /* LaunchScreen.storyboard */; };
+		A0BDAE381FF3FB9900E965B9 /* place.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = A0BDAE371FF3FB9900E965B9 /* place.sqlite */; };
+		A0BDAE3B1FF3FFCC00E965B9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAE3A1FF3FFCC00E965B9 /* Utility.swift */; };
+		A0BDAE3E1FF400DD00E965B9 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAE3D1FF400DD00E965B9 /* Place.swift */; };
+		A0BDAE411FF401D000E965B9 /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDAE401FF401D000E965B9 /* PlaceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A0BDAE2A1FF3FA3E00E965B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0BDAE2D1FF3FA3E00E965B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0BDAE2F1FF3FA3E00E965B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0BDAE371FF3FB9900E965B9 /* place.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = place.sqlite; sourceTree = "<group>"; };
+		A0BDAE3A1FF3FFCC00E965B9 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A0BDAE3D1FF400DD00E965B9 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		A0BDAE401FF401D000E965B9 /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +86,58 @@
 		A0BDAE221FF3FA3E00E965B9 /* place */ = {
 			isa = PBXGroup;
 			children = (
+				A0BDAE3F1FF401C500E965B9 /* service */,
+				A0BDAE3C1FF400D200E965B9 /* entity */,
+				A0BDAE391FF3FFC200E965B9 /* util */,
+				A0BDAE361FF3FB5D00E965B9 /* resource */,
+				A0BDAE351FF3FB4D00E965B9 /* view */,
 				A0BDAE231FF3FA3E00E965B9 /* AppDelegate.swift */,
-				A0BDAE251FF3FA3E00E965B9 /* ViewController.swift */,
-				A0BDAE271FF3FA3E00E965B9 /* Main.storyboard */,
-				A0BDAE2A1FF3FA3E00E965B9 /* Assets.xcassets */,
 				A0BDAE2C1FF3FA3E00E965B9 /* LaunchScreen.storyboard */,
 				A0BDAE2F1FF3FA3E00E965B9 /* Info.plist */,
 			);
 			path = place;
+			sourceTree = "<group>";
+		};
+		A0BDAE351FF3FB4D00E965B9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A0BDAE271FF3FA3E00E965B9 /* Main.storyboard */,
+				A0BDAE251FF3FA3E00E965B9 /* ViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A0BDAE361FF3FB5D00E965B9 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				A0BDAE371FF3FB9900E965B9 /* place.sqlite */,
+				A0BDAE2A1FF3FA3E00E965B9 /* Assets.xcassets */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		A0BDAE391FF3FFC200E965B9 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				A0BDAE3A1FF3FFCC00E965B9 /* Utility.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		A0BDAE3C1FF400D200E965B9 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				A0BDAE3D1FF400DD00E965B9 /* Place.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		A0BDAE3F1FF401C500E965B9 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				A0BDAE401FF401D000E965B9 /* PlaceService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0BDAE2E1FF3FA3E00E965B9 /* LaunchScreen.storyboard in Resources */,
+				A0BDAE381FF3FB9900E965B9 /* place.sqlite in Resources */,
 				A0BDAE2B1FF3FA3E00E965B9 /* Assets.xcassets in Resources */,
 				A0BDAE291FF3FA3E00E965B9 /* Main.storyboard in Resources */,
 			);
@@ -183,9 +236,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-place/Pods-place-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -215,7 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0BDAE261FF3FA3E00E965B9 /* ViewController.swift in Sources */,
+				A0BDAE411FF401D000E965B9 /* PlaceService.swift in Sources */,
 				A0BDAE241FF3FA3E00E965B9 /* AppDelegate.swift in Sources */,
+				A0BDAE3B1FF3FFCC00E965B9 /* Utility.swift in Sources */,
+				A0BDAE3E1FF400DD00E965B9 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
